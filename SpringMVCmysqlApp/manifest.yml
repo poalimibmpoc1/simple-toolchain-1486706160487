@@ -11,5 +11,5 @@ applications:
   instances: 1
   buildpack: liberty-for-java
   disk_quota: 1024M
-  host: SpringMVCmysqlApp-0z1-0z1
+  host: SpringMVCmysqlApp-${random-word}
   domain: mybluemix.net
