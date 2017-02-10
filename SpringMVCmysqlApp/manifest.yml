@@ -1,0 +1,15 @@
+---
+declared-services:
+  mysqlEmp:
+    label: cleardb
+    plan: spark
+applications:
+- services:
+  - mysqlEmp
+  name: SpringMVCmysqlApp
+  memory: 512M
+  instances: 1
+  buildpack: liberty-for-java
+  disk_quota: 1024M
+  host: SpringMVCmysqlApp-0z1-0z1
+  domain: mybluemix.net
